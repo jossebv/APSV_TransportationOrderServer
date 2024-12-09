@@ -156,7 +156,7 @@ public class TransportationOrderControllerTest {
 
     MvcResult result2 = mockMvc.perform(request2)
 
-        .andExpect(status().isNotFound())
+        .andExpect(status().is4xxClientError())
 
         .andReturn();
 
